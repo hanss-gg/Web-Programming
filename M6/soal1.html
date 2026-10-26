@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NIM_Soal1</title>
+    <link type="text/css" rel="stylesheet" href="style1.css">
+</head>
+<body onload="inputData()">
+    <form>
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" class="form-control" id="nama" readonly>
+        </div>
+        <div class="form-group">
+            <label>NIM</label>
+            <input type="text" class="form-control" id="nim" readonly>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function inputData() {
+            var nama = prompt("Masukkan Nama kamu:");
+            var NIM = prompt("Masukkan NIM kamu:");
+
+            if (nama !== null) {
+                document.getElementById("nama").value = nama;
+            }
+            if (NIM !== null) {
+                document.getElementById("nim").value = NIM;
+            }
+        }
+    </script>
+
+</body>
+</html>
