@@ -1,0 +1,138 @@
+/* Reset & Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    margin: 0;
+    color: #333;
+}
+
+/* Card Container */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 460px;
+    padding: 24px 28px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label.main-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #0069d9;
+}
+
+/* Halaman Hasil Styles */
+.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 0 0 24px 0;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+}
+
+.data-table td {
+    padding: 10px 0;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.data-table td.label {
+    font-weight: bold;
+    color: #111;
+    width: 130px;
+    padding-right: 12px;
+}
+
+.data-table td.value {
+    color: #222;
+}
+
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
