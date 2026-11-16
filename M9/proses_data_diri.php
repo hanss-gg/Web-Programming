@@ -1,5 +1,4 @@
  <?php
-    // 1. Koneksi ke MySQL
     $koneksi = mysqli_connect("localhost", "root", "", "M9");
 
     $nama = $_POST['nama'];
