@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sapa AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Form Sapa Menggunakan AJAX dan PHP</h1>
+
+        <label>Masukkan Nama Anda:</label>
+        <input type="text" id="nama" placeholder="Contoh: Alex">
+
+        <button onclick="kirim()">Kirim</button>
+
+        <h2>Respon Server:</h2>
+        <div id="respon">Menunggu input...</div>
+    </div>
+
+    <script>
+        function kirim() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'server.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                var el = document.getElementById('respon');
+                el.textContent = xhr.responseText;
+                el.className = xhr.responseText.startsWith('Error') ? 'error' : 'sukses';
+            };
+            xhr.send('nama=' + encodeURIComponent(document.getElementById('nama').value));
+        }
+    </script>
+</body>
+</html>
